@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>疾風競馬 · Gallop Legend</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">疾風競馬<small>GALLOP LEGEND</small></div>
+    <nav>
+      <button data-s="home">馬房</button>
+      <button data-s="race">比賽</button>
+      <button data-s="market">馬市</button>
+      <button data-s="breed">繁殖</button>
+      <button data-s="hall">名馬堂</button>
+      <button data-s="daily">任務</button>
+      <button data-s="achv">成就</button>
+    </nav>
+    <div class="hud">
+      <span id="hud-time"></span>
+      <span id="hud-pts" class="pts"></span>
+    </div>
+  </header>
+
+  <main>
+    <section id="sc-home" class="screen"></section>
+    <section id="sc-race" class="screen"></section>
+    <section id="sc-market" class="screen"></section>
+    <section id="sc-breed" class="screen"></section>
+    <section id="sc-hall" class="screen"></section>
+    <section id="sc-daily" class="screen"></section>
+    <section id="sc-achv" class="screen"></section>
+  </main>
+
+  <div id="modal" class="hidden"><div id="modal-box"></div></div>
+  <div id="toast"></div>
+
+  <script src="data.js"></script>
+  <script src="race.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
